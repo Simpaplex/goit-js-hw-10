@@ -13,7 +13,9 @@ form.addEventListener('submit', event => {
     iziToast.warning({
       title: '⚠️ Warning',
       message: 'Please enter a valid positive number for delay.',
+      class: 'toast-warning',
       position: 'center',
+      timeout: 3000,
     });
     return;
   }
@@ -23,14 +25,18 @@ form.addEventListener('submit', event => {
       iziToast.success({
         title: '✅ Success',
         message: `Fulfilled promise in ${delay}ms`,
-        position: 'center',
+        position: 'topRight',
+        class: 'toast-success',
+        timeout: 3000,
       });
     })
     .catch(delay => {
       iziToast.error({
         title: '❌ Error',
         message: `Rejected promise in ${delay}ms`,
-        position: 'center',
+        position: 'topRight',
+        class: 'toast-error',
+        timeout: 3000,
       });
     });
 });

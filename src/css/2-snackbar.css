@@ -58,12 +58,12 @@
   cursor: pointer;
 }
 
-.chrome-frame {
+.chrome-frame-snack {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 142px;
-  height: 142px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   background: radial-gradient(circle, #333, #111);
   box-shadow: inset 2px 2px 4px #555, inset -2px -2px 4px #222,
@@ -72,10 +72,10 @@
   margin-bottom: 24px;
 }
 
-.red-button {
+.red-button-snack {
   color: white;
-  width: 120px;
-  height: 120px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, #ff4d4d, #990000);
   box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.3),
@@ -86,7 +86,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.red-button:active {
+.red-button-snack:active {
   background: radial-gradient(circle at 30% 30%, #cc0000, #660000);
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
     inset -1px -1px 2px rgba(255, 255, 255, 0.2);
