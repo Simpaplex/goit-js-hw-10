@@ -1,17 +1,18 @@
 .back-link {
-  display: inline-block;
-  padding: 4px 8px;
-  margin-bottom: 32px;
-  background-color: #def5ee;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 150ms ease-in-out, box-shadow 250ms ease-in-out,
-    background-color 250ms ease-in-out;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  background-color: rgba(0,0,0,0.6);
+  color: #00ffcc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 8px #00ffcc88;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
 }
 
 .back-link:hover {
-  background-color: #a1f9de;
-  transform: scale(1.01);
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0,0,0,0.9);
 }

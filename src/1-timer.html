@@ -11,10 +11,35 @@
 
 <body>
   <main>
-    <div class="container">
-      <h1 class="main-title">TIMER
-      </h1>
-      <load src="./partials/back-link.html" />
+    <div class="wrapp">
+      <div class="dashboard">
+        <h1 class="main-title">🚀 LAUNCH CONTROL</h1>
+        <div class="timer-wrapper">
+          <input type="text" id="datetime-picker" class="input-display" />
+          <div class="chrome-frame">
+            <button class="red-button" type="button" data-start>Start</button>
+          </div>
+          <div class="timer">
+            <div class="field">
+              <span class="value" data-days>00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="field">
+              <span class="value" data-hours>00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="field">
+              <span class="value" data-minutes>00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+              <span class="value" data-seconds>00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+        </div>
+        <load src="./partials/back-link.html" />
+      </div>
     </div>
   </main>
   <script type="module" src="./js/1-timer.js"></script>
